@@ -8,7 +8,7 @@ setup(
     version='1.0.0',
     url='https://github.com/kunyo/flask_signature_auth',
     license='UNLICENSED',
-    author='KN',
+    author='Stefano Cocchi',
     author_email='',
     description='',
     long_description='',
