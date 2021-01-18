@@ -51,14 +51,18 @@ def change_userinfo():
 |Option name|Type|Optional|Default Value|Description|
 |---|---|---|---|---|
 |ttl|`int`|YES|`10`|The lifetime of a signed http request signature, expressed in seconds. This gets calculated using the `(created)` timestamp of a request|
-|algorithm|`str`|YES|`rsa-sha256`|The algorithm used to verify signatures|
+|algorithm|`str`|YES|`rsa-sha256`|The algorithm used to verify signatures. See supported algorithms below|
 |key_bytes|`bytes`|YES|`None`|A bytes representation of a valid PEM key|
 |key_locator|`callable`|YES|`None`|A function used to retrieve the key associated with a specific key ID|
 |headers|`list`|YES|`['(request-target)', '(created)', 'Digest']`|A list of headers to be included in the string to sign|
 |header_name|`str`|YES|`Authorization`|Force usage of a different HTTP header to store the signature (e.g: `Signature`)|
+## Supported algorithms
+|||
+|---|---|
+|`rsa-sha256`|Padding: `PKCS1v15`|
 
 ## Examples
-|   |   |
+|||
 |---|---|
 |[Basic Server](./examples/basic-server.py)|A server implementation that validates an HTTP request signature using a pre-shared public-key|
 |[Basic Client](./examples/basic-client.py)|A client implementation that uses Python `requests` module to send a signed HTTP request|
