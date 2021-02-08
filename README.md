@@ -1,5 +1,5 @@
 # flask-signature-auth
-A Python module for Flask allows validating signed HTTP requests.
+A Python module for Flask providing capabilities to validate signed HTTP requests.
 
 ## Install
 ```shell
