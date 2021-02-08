@@ -1,4 +1,5 @@
 # flask-signature-auth
+[![Build Status](https://travis-ci.com/kunyo/flask-signature-auth.svg?branch=master)](https://travis-ci.com/kunyo/flask-signature-auth)
 A Python module for Flask providing capabilities to validate signed HTTP requests.
 
 ## Install
