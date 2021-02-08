@@ -57,9 +57,9 @@ def change_userinfo():
 |headers|`list`|YES|`['(request-target)', '(created)', 'Digest']`|A list of headers to be included in the string to sign|
 |header_name|`str`|YES|`Authorization`|Force usage of a different HTTP header to store the signature (e.g: `Signature`)|
 ## Supported algorithms
-|||
+|Name|Notes|
 |---|---|
-|`rsa-sha256`|Padding: `PKCS1v15`|
+|`rsa-sha256`|Supported padding: `PKCS1v15`|
 
 ## Examples
 |||
